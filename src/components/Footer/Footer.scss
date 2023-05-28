@@ -1,0 +1,32 @@
+footer{
+    background: #000;
+    width: 100%;
+    min-height: 150px;
+    color: #757575;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 10px 0;
+    .top{
+        margin: 15px 0 20px 0;
+    }
+    .middle{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        p{
+            margin-top: 10px;
+        }
+        .middle-icons span{
+            margin-right: 10px;
+            cursor: pointer;
+        }
+    }
+    .bottom{
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        span{
+            margin-right: 5px;
+        }
+    }
+}

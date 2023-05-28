@@ -1,0 +1,61 @@
+header {
+    background: none;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+header{
+    align-items: center;
+    .logo{
+        color: red;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .header-right-container{
+        display: flex;
+    }
+    .dark-light-container{
+        margin-right: 10px;
+        border:1px solid #fff;
+        background: none;
+        border-radius: 4px;
+    }
+    .dark-light-container button{
+        width: 116px;
+        height: 54px;
+        cursor: pointer;
+        border: none;
+        background: no-repeat;
+        color: #fff;
+    }
+    .logout-botton{
+        border:1px solid #fff;
+        border-radius: 4px;
+        background: none;
+        color: #fff;
+        width: 116px!important;
+        height: 54px!important;
+    }
+    .logout-botton button{
+        width: 116px;
+        height: 54px;
+        cursor: pointer;
+        border: none;
+        background: none;
+        color: #fff;
+    }
+    .logout-botton .link{
+        width: 116px!important;
+        height: 54px!important;
+        cursor: pointer;
+        border: none;
+        background: none;
+        color: #fff;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}

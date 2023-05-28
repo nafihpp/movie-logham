@@ -1,0 +1,30 @@
+@import "./_variables";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto','Open Sans', 'Helvetica Neue', sans-serif;
+}
+body {
+    min-height: 100vh;
+    width: 100%;
+    background: rgb(0, 0, 0);
+}
+#root{
+    background: url("../assets/bg.png");
+    width: 100%;
+    min-height: 100vh;
+}
+.dark{
+    background: $dark;
+    color: $dark-color;
+}
+.light{
+    color: $light-color;
+    background: $light;
+}
+.wrapper{
+    width: 90%;
+    margin: 0 auto;
+}

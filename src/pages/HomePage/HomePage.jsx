@@ -5,8 +5,7 @@ import { MovieContext } from "../../context/MovieContext";
 import { MovieCards } from "../../components/MovieCards/MovieCards";
 
 export const HomePage = () => {
-    const { movies, setMovies } = useContext(MovieContext);
-    console.log(movies, "==movies");
+    const { movies } = useContext(MovieContext);
     return (
         <div>
             <div className="search-container">

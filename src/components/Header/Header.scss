@@ -11,6 +11,7 @@ header{
         color: red;
         font-size: 20px;
         font-weight: 600;
+        margin-right: 13px;
     }
     .header-right-container{
         display: flex;
@@ -22,7 +23,7 @@ header{
         border-radius: 4px;
     }
     .dark-light-container button{
-        width: 116px;
+        width: 90px;
         height: 54px;
         cursor: pointer;
         border: none;
@@ -34,11 +35,11 @@ header{
         border-radius: 4px;
         background: none;
         color: #fff;
-        width: 116px!important;
+        width: 90px!important;
         height: 54px!important;
     }
     .logout-botton button{
-        width: 116px;
+        width: 90px;
         height: 54px;
         cursor: pointer;
         border: none;
@@ -47,7 +48,7 @@ header{
       
     }
     .logout-botton .link{
-        width: 116px!important;
+        width: 90px!important;
         height: 54px!important;
         cursor: pointer;
         border: none;

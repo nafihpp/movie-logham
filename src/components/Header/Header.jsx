@@ -14,7 +14,7 @@ export const Header = () => {
     };
 
     return (
-        <header className={theme}>
+        <header className={theme !== "dark" && theme}>
             <div className="logo">MOVIE LOGHAM</div>
             <div className="header-right-container">
                 <div className="dark-light-container" onClick={toggleTheme}>
@@ -56,8 +56,8 @@ export const Header = () => {
                         <button
                             onClick={signOut}
                             style={{
-                                border: theme !== "dark" && "1px solid black",
-                                color: theme !== "dark" && "black",
+                                border: theme == "dark" && "1px solid black",
+                                color: theme == "dark" && "black",
                                 borderRadius: "4px",
                             }}
                         >

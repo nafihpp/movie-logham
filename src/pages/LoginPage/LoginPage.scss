@@ -1,47 +1,39 @@
-.login-container .content .top {
-    display: flex;
-    flex-direction: column;
-}
-
-.login-container .content .top h1 {
-    color: var(--white);
-    font-size: 32px;
-    margin-bottom: 30px;
-}
-.login-container .content .top h1.white-mode {
-    color: var(--black);
-}
-
-.login-container .content .top form {
-    display: flex;
-    flex-direction: column;
-}
-
-.login-container .content .top form button.white-mode {
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-}
-
-.login-container .content .top form a {
-    color: var(--grey-text-secondary);
-    text-align: right;
-    margin-top: 10px;
-    font-size: 14px;
-    cursor: pointer;
-}
-
-.login-container .content .top form a.white-mode {
-    color: var(--dark-grey);
-}
-
-@media all and (max-width: 480px) {
-    .login-container {
-        height: calc(100vh - 110px);
-        position: absolute;
-        top: 110px;
-        padding: 50px 25px;
-        border-radius: 0;
+.login-container  {
+    h1{
+        text-align: center;
     }
-    .login-container .content .top h1 {
-        font-size: 24px;
+    input{
+        width: 95%;
+        margin-top: 13px;
+        margin-bottom: 11px;
+        padding: 7px;
+        outline: none;
+        background: #333333;
+        border: none;
+        height: 50px;
+        border-radius: 4px;
+    }
+    button{
+        width: 95%;
+        display: block;
+        padding: 13px 10px;
+        border: none;
+        background: #E50914;
+        color: #fff;
+        border-radius: 4px;
+        font-size: 13px;
+    }
+    a{
+        text-decoration: none;
+    }
+    .forgot-password{
+        text-align: right;
+        display: block;
+        margin: 12px 14px 0 15px;
+        color: #fff;
+    }
+    p{
+        margin-top: 68px;
+        text-align: center;
     }
 }

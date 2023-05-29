@@ -4,5 +4,5 @@ import { ThemeContext } from "../../context/ThemeContext";
 
 export const FormLayout = ({ children }) => {
     const { theme } = useContext(ThemeContext);
-    return <div className="form-container">{children}</div>;
+    return <div className={`form-container ${theme}`}>{children}</div>;
 };

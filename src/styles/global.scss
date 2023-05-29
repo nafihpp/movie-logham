@@ -17,12 +17,12 @@ body {
     min-height: 100vh;
 }
 .dark{
-    background: $dark;
-    color: $dark-color;
+    background: $dark!important;
+    color: $dark-color!important;
 }
 .light{
-    color: $light-color;
-    background: $light;
+    color: $light-color!important;
+    background: $light!important;
 }
 .wrapper{
     width: 90%;

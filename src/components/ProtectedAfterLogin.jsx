@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Navigate, Outlet } from "react-router-dom";
+import { AuthContext } from "../context/AuthContext";
 
 export const ProtectedAfterLogin = () => {
-    const token = localStorage.getItem("token");
-    if (!token) {
-        return <Outlet />;
+    const { auth } = useContext(AuthContext);
+    if (auth) {
+        return <Navigate to="/" />;
     }
 
-    return <Navigate to="/homepage" />;
+    return <Outlet />;
 };

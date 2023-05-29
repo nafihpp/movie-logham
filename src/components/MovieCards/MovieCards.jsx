@@ -6,9 +6,8 @@ export const MovieCards = ({ movie }) => {
             <img
                 src={`https://image.tmdb.org/t/p/w500/${movie?.poster_path}`}
                 alt="img"
-                width="300"
-                height="300"
-                style={{ objectFit: "contain" }}
+                width="250"
+                height="250"
             />
         </div>
     );

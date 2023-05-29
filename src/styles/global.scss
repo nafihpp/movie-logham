@@ -12,7 +12,6 @@ body {
     background: rgb(0, 0, 0);
 }
 #root{
-    background: url("../assets/bg.png");
     width: 100%;
     min-height: 100vh;
 }
@@ -27,4 +26,13 @@ body {
 .wrapper{
     width: 90%;
     margin: 0 auto;
+}
+.app{
+    background: url("../assets/bg.png");
+    position: relative;
+    min-height: 100vh;
+    .footer{
+        position: absolute;
+        bottom: 0px;
+    }
 }

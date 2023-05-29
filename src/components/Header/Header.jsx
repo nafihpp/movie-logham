@@ -70,7 +70,15 @@ export const Header = () => {
                             Logout
                         </button>
                     ) : (
-                        <Link to="/" className="link">
+                        <Link
+                            to="/"
+                            className="link"
+                            style={{
+                                border: theme !== "dark" && "1px solid black",
+                                color: theme !== "dark" && "black",
+                                borderRadius: "4px",
+                            }}
+                        >
                             Login
                         </Link>
                     )}

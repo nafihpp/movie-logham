@@ -56,8 +56,8 @@ export const Header = () => {
                         <button
                             onClick={signOut}
                             style={{
-                                border: theme == "dark" && "1px solid black",
-                                color: theme == "dark" && "black",
+                                border: theme !== "dark" && "1px solid black",
+                                color: theme !== "dark" && "black",
                                 borderRadius: "4px",
                             }}
                         >

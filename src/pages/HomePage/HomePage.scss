@@ -6,7 +6,9 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-bottom: 180px;
+    padding-bottom: 200px;
+    gap: 20px;
+    max-height: 500px;
 }
 @media all and (max-width: 648px) {
     .search-container {

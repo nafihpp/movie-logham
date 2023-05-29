@@ -19,7 +19,8 @@ export const LoginPage = () => {
         setPassword(e.target.value);
     };
 
-    const handleSubmit = () => {
+    const handleSubmit = (e) => {
+        e.preventDefault();
         if (email === "test" && password === "test") {
             localStorage.setItem("token", "10000000000");
             setAuth(true);
@@ -35,7 +36,7 @@ export const LoginPage = () => {
                     <div className="top">
                         <h1>Sign In</h1>
                         <form autoComplete="off" className="login-form">
-                            <input placeholder="email" onChange={handleEmail} />
+                            <input placeholder="Email" onChange={handleEmail} />
                             <input
                                 placeholder="password"
                                 onChange={handlePassword}

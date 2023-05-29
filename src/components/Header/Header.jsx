@@ -4,6 +4,7 @@ import "./Header.scss";
 import { useContext } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
 import { AuthContext } from "../../context/AuthContext";
+import logo from "../../assets/logo.png";
 
 export const Header = () => {
     const { auth, setAuth } = useContext(AuthContext);
@@ -15,7 +16,12 @@ export const Header = () => {
 
     return (
         <header className={theme !== "dark" && theme}>
-            <div className="logo">MOVIE LOGHAM</div>
+            <div className="logo">
+                <span>
+                    <img src={logo} alt="logo-icon" />
+                </span>
+                MOVIE LOGHAM
+            </div>
             <div className="header-right-container">
                 <div className="dark-light-container" onClick={toggleTheme}>
                     <button

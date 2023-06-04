@@ -1,5 +1,5 @@
-![Uploading mobile.gif…]()
-
+## Movie-Logham
+![mobile](https://github.com/nafihpp/movie-logham/assets/49452140/6fba567b-8f15-415d-a814-5bb80ec3067c)
 
 # Technologies Used
 

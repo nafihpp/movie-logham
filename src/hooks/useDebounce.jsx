@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 
-const useDebounce = () => {
-    return <div>useDebounce</div>;
+const useDebounce = (incomingFuc, delay) => {
+    useEffect(() => {
+        let timer = setTimeout(() => {
+            incomingFuc();
+        }, delay);
+        return () => {
+            clearTimeout(timer);
+        };
+    }, []);
 };
 
 export default useDebounce;

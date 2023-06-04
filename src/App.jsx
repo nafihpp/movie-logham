@@ -19,7 +19,7 @@ function App() {
 
     useEffect(() => {
         nprogress.start();
-        nprogress.done();
+        window.addEventListener("load", nprogress.done());
     }, [location.pathname]);
 
     return (

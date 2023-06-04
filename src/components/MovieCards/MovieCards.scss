@@ -1,3 +1,11 @@
 .movie-card-container{
+    width: 20%;
     cursor: pointer;
+}
+
+@media all and (max-width: 781px) {
+    .movie-card-container {
+        width: 40%;
+        cursor: pointer;
+    }
 }

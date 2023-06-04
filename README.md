@@ -1,3 +1,6 @@
+![Uploading mobile.gif…]()
+
+
 # Technologies Used
 
 The app is built using with the following tech:

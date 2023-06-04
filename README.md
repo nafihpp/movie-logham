@@ -1,10 +1,18 @@
 # Technologies Used
-The app was built using React with the following tech:
 
-- React Router DOM: For navigating between pages and implementing protected routing
-- Debounce: For implementing the debounce feature on the search functionality
-- Context API: For managing state across components
-- Local Storage: For storing the authentication token
+The app was built using React with the following tech:
+- React JS - React Library is used for creating the complete webapp.
+- Context API: For State Management.
+- React Router DOM: For navigating between pages and implementing protected routing and Lazy loading.
+- Local Storage: For storing the authentication token.
 - Sass/Scss: For styling and responsive user interface
-- Axios: For making HTTP requests to the TMDB API
+- Axios: For HTTP handling 
 - Vite: For bundling and serving the app
+
+## Features
+- Login functionality: Users can enter username and password (username:test, password:test), and if they are authenticated, they will be redirected to the home page else you are not allowed to enter the homepage.
+- Dark mode /Light Mode switch: Toogle between light and dark mode has been included on the home page.
+- Log out button: Users can log out of the app by clicking on the log out button on the Header.
+- Search - Filtering the movies based on your Search.
+- Custom Hook - work Ongoing
+

@@ -22,11 +22,11 @@ export const LoginPage = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         if (email === "test" && password === "test") {
-            localStorage.setItem("token", "10000000000");
+            localStorage.setItem("movie-token", "tokenauthsuccess");
             setAuth(true);
             navigate("/");
         } else {
-            return;
+            alert("wrong credentials");
         }
     };
     return (
@@ -51,7 +51,7 @@ export const LoginPage = () => {
                             </Link>
                         </form>
                     </div>
-                    <p>
+                    <p className="bottom-link">
                         New to Movie Logham?{" "}
                         <Link to="/signup">Sign up now.</Link>
                     </p>

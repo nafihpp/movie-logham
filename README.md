@@ -16,3 +16,9 @@ The app is built using with the following tech:
 - Search - Filtering the movies based on your Search.
 - Custom Hook - work Ongoing
 
+## How to Run
+Install Dependencies
+Run <code>npm install</code> to install the app's dependencies.
+
+Start the App
+Run <code>npm run dev</code> to start the app. The app will be served at http://localhost:5171.

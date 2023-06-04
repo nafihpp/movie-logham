@@ -19,7 +19,7 @@ The app is built using with the following tech:
 - Log out button: Users can log out of the app which clears the token in the localstorage and also navigates to login page.
 - Protected Login Route - After authentication user can't access login/register or forgot password page without doing the logout.
 - Search - Filtering the movies based on your Search.
-- Custom Hook - work Ongoing
+- Custom Hook - useDebouce, useLocalstograge (work Ongoing)
 
 ## How to Run
 Install Dependencies

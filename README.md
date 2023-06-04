@@ -6,16 +6,16 @@
 The app is built using with the following tech:
 - React JS - React Library is used for creating the complete webapp.
 - Context API: For State Management.
-- React Router DOM v6: For navigating between pages and implementing protected routing and Lazy loading.
+- React Router DOM v6: For navigating between pages, implementing protected routing and Lazy loading.
 - Local Storage: For storing the authentication token.
-- Sass/Scss: For styling and responsive user interface
-- Axios: For HTTP handling 
-- Vite: For bundling and serving the app
+- Sass/Scss: For styling and responsive user interface.
+- Axios: For HTTP handling.
+- Vite: For bundling and serving the app.
 
 ## Features
 - Custom Font Family - Roboto
-- Login functionality: Users can enter username and password. demo(username:test, password:test), and if they are authenticated, they will be redirected to the home page else you are not allowed to enter the homepage.
 - Dark mode /Light Mode switch: Toogle between light and dark mode has been included on the home page.
+- Login functionality: Users can enter username and password. demo(username:test, password:test), and if they are authenticated, they will be redirected to the home page else you are not allowed to enter the homepage.
 - Log out button: Users can log out of the app which clears the token in the localstorage and also navigates to login page.
 - Protected Login Route - After authentication user can't access login/register or forgot password page without doing the logout.
 - Search - Filtering the movies based on your Search.

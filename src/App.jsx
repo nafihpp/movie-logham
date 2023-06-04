@@ -30,11 +30,20 @@ function App() {
                     <Route path="/" element={<HomePage />} />
                     <Route path="/movie/:id" element={<MoviePage />} />
                 </Route>
-                {/* <Route element={<ProtectedAfterLogin />}> */}
-                <Route path="/login" element={<LoginPage />} />
-                <Route path="/signup" element={<SingupPage />} />
-                <Route path="/reset-password" element={<ForgotPassword />} />
-                {/* </Route> */}
+                <Route element={<ProtectedAfterLogin />}>
+                    <Route path="/login" element={<LoginPage />} />
+                    <Route path="/signup" element={<SingupPage />} />
+                    <Route
+                        path="/reset-password"
+                        element={<ForgotPassword />}
+                    />
+                </Route>
+                <Route
+                    path="*"
+                    element={
+                        <h1 className="page-not-found">404 Error Not Found</h1>
+                    }
+                />
             </Routes>
             <div className="footer">
                 <Footer />

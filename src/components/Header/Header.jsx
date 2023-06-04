@@ -11,7 +11,8 @@ export const Header = () => {
     const { theme, toggleTheme } = useContext(ThemeContext);
 
     const signOut = () => {
-        console.log("signOut");
+        setAuth(false);
+        localStorage.clear("movie-token");
     };
 
     return (

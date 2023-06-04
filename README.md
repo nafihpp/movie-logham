@@ -1,6 +1,6 @@
 # Technologies Used
 
-The app was built using React with the following tech:
+The app is built using with the following tech:
 - React JS - React Library is used for creating the complete webapp.
 - Context API: For State Management.
 - React Router DOM: For navigating between pages and implementing protected routing and Lazy loading.

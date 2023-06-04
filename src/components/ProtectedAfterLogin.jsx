@@ -5,6 +5,6 @@ import { AuthContext } from "../context/AuthContext";
 export const ProtectedAfterLogin = () => {
     const { setAuth } = useContext(AuthContext);
     const token = localStorage.getItem("movie-token");
-    token && setAuth(true);
+    token ? setAuth(true) : setAuth(false);
     return token ? <Navigate to="/" /> : <Outlet />;
 };

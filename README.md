@@ -27,4 +27,4 @@ Install Dependencies
 Run <code>npm install</code> to install the app's dependencies.
 
 Start the App
-Run <code>npm run dev</code> to start the app. The app will be served at http://localhost:5171.
+Run <code>npm run dev</code> to start the app. The app will be served at http://localhost:5173.

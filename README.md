@@ -1,5 +1,6 @@
 ## Movie-Logham
-![mobile](https://github.com/nafihpp/movie-logham/assets/49452140/b4a3b160-7e4f-4c3e-90cf-52d845f0b990)
+![mobile (3)](https://github.com/nafihpp/movie-logham/assets/49452140/d7ab266d-d4fa-41a9-9523-d3c8fb99a8a3)
+
 
 # Technologies Used
 

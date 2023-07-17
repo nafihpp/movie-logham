@@ -1,8 +1,13 @@
 .movie-card-container{
-    width: 20%;
+    width: 19%;
     cursor: pointer;
+    transition: 0.5s;
+    scale: (0.9);
 }
+.movie-card-container:hover{
+   transform:scale(1.1);
 
+}
 @media all and (max-width: 781px) {
     .movie-card-container {
         width: 40%;

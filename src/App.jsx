@@ -15,41 +15,36 @@ import "nprogress/nprogress.css";
 import { ProtectedAfterLogin } from "./components/ProtectedAfterLogin";
 
 function App() {
-    let location = useLocation();
+  let location = useLocation();
 
-    useEffect(() => {
-        nprogress.start();
-        nprogress.done();
-    }, [location.pathname]);
+  useEffect(() => {
+    nprogress.start();
+    nprogress.done();
+  }, [location.pathname]);
 
-    return (
-        <div className="app">
-            <Header />
-            <Routes>
-                <Route element={<ProtectedRoute />}>
-                    <Route path="/" element={<HomePage />} />
-                    <Route path="/movie/:id" element={<MoviePage />} />
-                </Route>
-                <Route element={<ProtectedAfterLogin />}>
-                    <Route path="/login" element={<LoginPage />} />
-                    <Route path="/signup" element={<SingupPage />} />
-                    <Route
-                        path="/reset-password"
-                        element={<ForgotPassword />}
-                    />
-                </Route>
-                <Route
-                    path="*"
-                    element={
-                        <h1 className="page-not-found">404 Error Not Found</h1>
-                    }
-                />
-            </Routes>
-            <div className="footer">
-                <Footer />
-            </div>
-        </div>
-    );
+  return (
+    <div className="app">
+      <Header />
+      <div className="center-h">
+        <Routes>
+          <Route element={<ProtectedRoute />}>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/movie/:id" element={<MoviePage />} />
+          </Route>
+          <Route element={<ProtectedAfterLogin />}>
+            <Route path="/login" element={<LoginPage />} />
+            <Route path="/signup" element={<SingupPage />} />
+            <Route path="/reset-password" element={<ForgotPassword />} />
+          </Route>
+          <Route
+            path="*"
+            element={<h1 className="page-not-found">404 Error Not Found</h1>}
+          />
+        </Routes>
+      </div>
+      <Footer />
+    </div>
+  );
 }
 
 export default App;

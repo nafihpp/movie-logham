@@ -6,4 +6,9 @@ h1.page-not-found{
     display:flex;
     justify-content: center;
     align-items: center;
+    height: calc(100vh - 236px);
+}
+.center-h{
+    width: 100%;
+    height: calc(100vh - 236px);
 }

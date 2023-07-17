@@ -37,10 +37,11 @@ export const LoginPage = () => {
                     <div className="top">
                         <h1>Sign In</h1>
                         <form autoComplete="off" className="login-form">
-                            <input placeholder="Email" onChange={handleEmail} />
+                            <input placeholder="Email" onChange={handleEmail} style={{ background : theme !== "dark" ? "aliceblue" : "#333333"}} />
                             <input
                                 placeholder="password"
                                 onChange={handlePassword}
+                                style={{ background : theme !== "dark" ? "aliceblue" : "#333333"}}
                             />
                             <button onClick={handleSubmit}>Sigin</button>
                             <Link

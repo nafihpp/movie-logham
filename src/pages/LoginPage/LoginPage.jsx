@@ -30,6 +30,7 @@ export const LoginPage = () => {
         }
     };
     return (
+        <div className="center-everything">
         <FormLayout>
             <div className="wrapper">
                 <div className={`login-container`}>
@@ -58,5 +59,6 @@ export const LoginPage = () => {
                 </div>
             </div>
         </FormLayout>
+        </div>
     );
 };

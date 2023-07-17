@@ -23,7 +23,7 @@ export const HomePage = () => {
         }
     }, [searchQuery]);
     return (
-        <div>
+        <div className="center-h">
             <div className="search-container">
                 <Search
                     searchQuery={searchQuery}

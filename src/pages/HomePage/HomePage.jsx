@@ -17,7 +17,7 @@ export const HomePage = () => {
         }
         if (searchQuery !== "") {
             let filteredMovies = movies.filter((movie) =>
-                movie.title.toLowerCase().includes(searchQuery)
+                movie.title.toLowerCase().includes(searchQuery.toLowerCase())
             );
             setFilterMovies(filteredMovies);
         }

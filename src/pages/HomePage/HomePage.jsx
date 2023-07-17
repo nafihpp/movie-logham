@@ -23,7 +23,7 @@ export const HomePage = () => {
         }
     }, [searchQuery]);
     return (
-        <div className="center-h">
+        <div className="center-h" style={{overflow:"auto"}}>
             <div className="search-container">
                 <Search
                     searchQuery={searchQuery}

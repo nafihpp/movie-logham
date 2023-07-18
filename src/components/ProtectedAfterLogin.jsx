@@ -1,10 +1,18 @@
-import React, { useContext } from "react";
-import { Navigate, Outlet, useNavigate } from "react-router-dom";
+import React, { useContext, useEffect } from "react";
+import { Navigate, Outlet } from "react-router-dom";
 import { AuthContext } from "../context/AuthContext";
 
 export const ProtectedAfterLogin = () => {
-    const { setAuth } = useContext(AuthContext);
+    const { auth, setAuth } = useContext(AuthContext);
     const token = localStorage.getItem("movie-token");
-    token ? setAuth(true) : setAuth(false);
-    return token ? <Navigate to="/" /> : <Outlet />;
+
+    useEffect(() => {
+        if (token) {
+            setAuth(true);
+        } else {
+            setAuth(false);
+        }
+    }, [token, setAuth]);
+
+    return auth ? <Navigate to="/" /> : <Outlet />;
 };

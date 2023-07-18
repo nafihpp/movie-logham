@@ -11,6 +11,10 @@ export const HomePage = () => {
     const [searchQuery, setSearchQuery] = useState("");
     const [filterMovies, setFilterMovies] = useState([]);
 
+    useEffect(() =>{
+        setFilterMovies(movies);
+    },[])
+
     useEffect(() => {
         if (searchQuery == "") {
             setFilterMovies(movies);
@@ -34,7 +38,7 @@ export const HomePage = () => {
                 <div className="movie-container">
                     {filterMovies &&
                         filterMovies?.map((movie) => (
-                            <MovieCards movie={movie} />
+                            <MovieCards movie={movie}  />
                         ))}
                 </div>
             </div>
